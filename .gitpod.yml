@@ -1,0 +1,9 @@
+image:
+  # Use a node image with npm available
+  file: .gitpod.Dockerfile
+tasks:
+  - init: npm install
+    command: npm run dev
+ports:
+  - port: 5173
+    onOpen: open-preview
